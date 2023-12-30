@@ -564,14 +564,14 @@ const formModify = (form) => {
 
 const themes = require("./themes.json");
 
-const base_public_serve = `${safeSlash()}plugins/public/any-bootstrap-theme${
+const base_public_serve = `${safeSlash()}plugins/public/sc-bsx-theme${
   features?.version_plugin_serve_path
     ? "@" + require("./package.json").version
     : ""
 }`;
 
 const get_css_url = (config) => {
-  const def = `${safeSlash()}plugins/public/any-bootstrap-theme/bootswatch/flatly/bootstrap.min.css`;
+  const def = `${safeSlash()}plugins/public/sc-bsx-theme/bootswatch/flatly/bootstrap.min.css`;
   if (!config || !config.theme) return def;
   if (config.theme === "File") return `/files/serve/${config.css_file}`;
   if (config.theme === "Other") return config.css_url || def;
@@ -743,7 +743,7 @@ const configuration_workflow = () =>
 
 module.exports = {
   sc_plugin_api_version: 1,
-  plugin_name: "any-bootstrap-theme",
+  plugin_name: "sc-bsx-theme",
   layout,
   fonts: (config) => themes[config.theme]?.fonts || {},
   configuration_workflow,
