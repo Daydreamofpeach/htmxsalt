@@ -1,0 +1,90 @@
+#sidebar {
+  width: 280px;
+  margin-left: 0px;
+}
+
+#sidebar.narrowed {
+  width: 75px;
+  overflow-x: hidden;
+}
+#sidebar .navbar-nav {
+  width: 100%;
+
+}
+#sidebar.narrowed .navbar-nav {
+  width: 280px;
+
+}
+
+#wrapper #content-wrapper {
+  background-color: #f8f9fc;
+  width: 100%;
+  overflow-x: clip;
+}
+
+#wrapper #content-wrapper #content {
+  flex: 1 0 auto;
+}
+
+#sidebar ul.components {
+  padding: 10px 0;
+  border-bottom: 1px solid white;
+}
+
+#sidebar ul li a {
+  padding: 10px 20px;
+  display: block;
+}
+
+#sidebar ul li a.sublink {
+  padding: 10px 30px;
+  display: block;
+}
+
+#sidebar ul li a:hover {
+  color: white;
+}
+
+#sidebar ul li.active > a,
+a[aria-expanded="true"] {
+  color: #fff;
+}
+
+#sidebar a[data-toggle="collapse"] {
+  position: relative;
+}
+
+.with-sidebar #page-inner-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+#sidebar form.menusearch .input-group {
+  width: 92% !important;
+  margin-left: 12px;
+}
+
+#sidebar #sidebarToggle {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+#sidebar #sidebarToggle::after {
+  font-weight: 900;
+  content: '\f104';
+  font-family: 'Font Awesome 5 Free';
+  margin-right: 0.1rem;
+}
+
+#sidebar.narrowed #sidebarToggle::after {
+  content: '\f105';
+  font-family: 'Font Awesome 5 Free';
+  margin-left: 0.25rem;
+}
+#sidebar.narrowed .narrowed-hide {
+  display: none;
+}
