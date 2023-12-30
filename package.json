@@ -1,23 +1,14 @@
 {
-  "name": "@saltcorn/any-bootstrap-theme",
-  "version": "0.4.7",
-  "description": "Configurable bootstrap layout plugin",
+  "name": "sc-bsx-theme",
+  "version": "0.0.1",
+  "description": "Configurable bootstrap layout plugin with htmx hx-boost",
   "main": "index.js",
-  "scripts": {
-    "test": "jest"
-  },
   "dependencies": {
     "@saltcorn/markup": "^0.1.2",
     "@saltcorn/data": "^0.1.2"
   },
-  "author": "Tom Nielsen",
+  "author": "VS",
   "license": "MIT",
-  "devDependencies": {
-    "jest": "^25.1.0"
-  },
-  "jest": {
-    "testEnvironment": "node"
-  },
   "eslintConfig": {
     "extends": "eslint:recommended",
     "parserOptions": {
